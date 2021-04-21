@@ -1,2 +1,3 @@
-# SpeechToText
-A simple implementation of a speech to text program using Azure services.
+# Speech To Text
+
+This project contains a simple implementation of a speech to text program using Azure's cognitive services. Credit for a significant portion of the code goes to [this](https://github.com/Azure-Samples/cognitive-services-speech-sdk/blob/master/samples/python/console/speech_sample.py) documented sample of using the Azure service. The code is capable of processing speech either from a .wav file or in real time from the microphone in three languages (English, French, Spanish). The languages can easily be changed by looking up suported languages [here](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support). If the processing runs correctly, the code will print out the words detected as text, identify the detected language, and translate the text to another language with the help of a Google Translate python module. One interesting aspect of the Azure service I noticed is that it struggled when more languages are added, especially if there were similar options. 
